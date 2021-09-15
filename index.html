@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Home | Spark Foundation</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">
+        <img src="image/donate.jpeg" alt="" />SPARK FOUNDATION
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="donate.html">DONATE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+
+    <div class="Box">
+      <div class="innerbox">
+        <h3>WELCOME TO Poor Childrens Foundation</h3>
+        <p>
+          Poor Childrens Foundation is a organization working to create a
+          positive and enduring change in the lives of children, families and
+          communities living in abject poverty and undue inequality.Poor
+          Children’s Foundation is a charitable organization founded to lift the
+          community of the stung meanchey landfill district out of poverty and
+          into a new era of hope and possibility through the provision of
+          Medical and Education.
+        </p>
+        <div class="button">
+          <a href="about.html"
+            ><button class="btn1 btn-success">About</button></a
+          >
+          <a href="donate.html"
+            ><button class="btn2 btn-success">Donate</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="copyright">
+        Copyright &#169;2021 | Sunny Raj | All Rights Reserved
+      </p>
+      <p class="copyright-1">SPARK FOUNDATION</p>
+    </footer>
+  </body>
+</html>

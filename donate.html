@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="donate.css" />
+    <title>Donate | Spark Foundation</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">
+        <img src="image/donate.jpeg" alt="" />SPARK FOUNDATION
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="donate.html">DONATE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+
+    <div class="Box">
+      <div class="row">
+        <div class="donatebox">
+          <i style="font-size: 1.3rem; line-height: 1.6"
+            >"Giving is not just about making a donation. <br />
+            It is about making a difference."</i
+          >
+          <h2>"Let us build a nation of educated children, together"</h2>
+          <form>
+            <script
+              src="https://checkout.razorpay.com/v1/payment-button.js"
+              data-payment_button_id="pl_HxGLYdExcG77cr"
+              async
+            ></script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

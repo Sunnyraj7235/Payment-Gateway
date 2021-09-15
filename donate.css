@@ -1,0 +1,196 @@
+:root {
+  --primary: rgba(245, 224, 228, 0.65);
+  --secondary: hsla(230, 96%, 62%, 0.65);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  line-height: 10px;
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.brand-title img {
+  width: 35px;
+  filter: invert(100%);
+  margin-left: 45px;
+  margin-right: 8px;
+}
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li a:hover {
+  color: #05f7ff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 975px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    background-color: #0c6a8e;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+.Box {
+  height: 110vh;
+  background: linear-gradient(135deg, var(--primary), var(--secondary)),
+    url(image/donatebackground.jpeg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.donatebox {
+  background-color: rgba(55, 67, 96, 0.6);
+  border-radius: 20px;
+  padding: 5%;
+  text-align: center;
+  color: #fff;
+  margin: 15%;
+}
+
+.donatebox h2 {
+  color: yellowgreen;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+.donatebox p {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 3px;
+  line-height: 1.938em;
+}
+
+@media (min-width: 1100px) {
+  .donatebox {
+    position: relative;
+    background-color: rgba(55, 67, 96, 0.6);
+    border-radius: 20px;
+    padding: 5%;
+    text-align: center;
+    color: #fff;
+    left: 35%;
+    top: 5%;
+    width: 670px;
+  }
+  .donatebox h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: yellowgreen;
+    font-style: italic;
+  }
+}

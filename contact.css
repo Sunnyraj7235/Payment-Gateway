@@ -152,6 +152,7 @@ body {
 .contactbox {
   background-color: rgba(55, 67, 96, 0.6);
   border-radius: 20px;
+  margin-left:10px;
   padding: 5%;
   text-align: center;
   color: #fff;

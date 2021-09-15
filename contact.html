@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Contact | Sprk Foundation</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://use.fontawesome.com/69ca5d3ded.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">
+        <img src="image/donate.jpeg" alt="" />SPARK FOUNDATION
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="donate.html">DONATE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+
+    <div class="Box">
+      <div class="row">
+        <div class="contactbox">
+          <i style="font-size: 1.8rem; line-height: 1.6; font-weight: 600"
+            >Contact Us</i
+          >
+          <h2>
+            <span>Email:</span> thesparksfoundation@gmail.com <br /><br />
+            <span>Phone:</span> +65-8402-8590
+          </h2>
+          <div class="centerdiv">
+            <a
+              href="https://www.linkedin.com/company/the-sparks-foundation/?originalSubdomain=sg"
+              target="_blank"
+            >
+              <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/thesparksfoundation.info/"
+              target="_blank"
+            >
+              <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/thesparksfoundation.info/?hl=en"
+              target="_blank"
+            >
+              <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/tsfsingapore?lang=en" target="_blank">
+              <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="copyright">
+        Copyright &#169;2021 | Sunny Raj | All Rights Reserved
+      </p>
+      <p class="copyright-1">SPARK FOUNDATION</p>
+    </footer>
+  </body>
+</html>
